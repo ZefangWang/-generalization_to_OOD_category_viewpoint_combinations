@@ -44,7 +44,7 @@ def get_model(MODEL_ARCH,NUM_CLASSES):
     if MODEL_ARCH == 'Long_Decoder_Long_Encoder':
         from models.Long_Decoder_Long_Encoder import resnet18_variant
         return resnet18_variant(num_classes = NUM_CLASSES)
-    if MODEL_ARCH == 'EARLY_BRANCHING_COMBINED' or 'dcgan':
+    if MODEL_ARCH == 'EARLY_BRANCHING_COMBINED' or 'acgan':
         from models.EARLY_BRANCHING_COMBINED import resnet18
         return resnet18(num_classes = NUM_CLASSES)
     if MODEL_ARCH == 'SPLIT_AFTER_ONE_BLOCK':
